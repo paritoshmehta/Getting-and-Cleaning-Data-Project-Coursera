@@ -77,5 +77,5 @@ tidy_abgs_data_set <- aggregate(tidy_data_set[, 3:dim(tidy_data_set)[2]],
                                 mean)
 names(tidy_abgs_data_set)[1:2] <- c('subject', 'activity')
 # Dump the second data set
-write.csv(tidy_abgs_data_set, tidy_avgs_data_file)
+write.csv(tidy_abgs_data_set, tidy_avgs_data_file, row.names=FALSE)
 
